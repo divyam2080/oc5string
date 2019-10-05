@@ -6,7 +6,9 @@ public class String1 {
             System.out.print(i + "\t");
         }
         System.out.println();
-
-
+        System.out.print("chars: ");
+        for (int j = 0; j < len; j++) {
+            System.out.print(S.charAt(j) + "\t");
+        }
     }
 }
