@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class String4 {
     private String input;
     private int c = 0;
@@ -21,5 +23,14 @@ public class String4 {
             c++;
         }
         System.out.println(input);
+    }
+}
+
+class change {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine().trim();
+        String4 obj = new String4(input);
+        obj.modify();
     }
 }
