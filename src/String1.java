@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class String1 {
     public void String(String S) {
         int len = S.length();
@@ -10,5 +12,16 @@ public class String1 {
         for (int j = 0; j < len; j++) {
             System.out.print(S.charAt(j) + "\t");
         }
+    }
+}
+
+class Execution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter String: ");
+        String S = scan.nextLine().trim();
+        scan.close();
+        String1 obj = new String1();
+        obj.String(S);
     }
 }
